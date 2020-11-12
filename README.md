@@ -1,3 +1,8 @@
-# S3 Project of Cuny & Christal 
+# S3 Projet de Cuny & Christal
 
-Welcome to the project repo. 
+Bienvenue sur le dépôt git du projet 
+
+Jeudi 12 Novembre : 
+- Création du fichier main
+- Création du Makefile
+- Ajout de fichiers contenant des fonctions SDL utiles 
