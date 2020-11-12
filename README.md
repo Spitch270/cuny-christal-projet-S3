@@ -1,2 +1,3 @@
-# Cuny-Christal-projet-S3
-Repository for student project. 
+S3 Project of Cuny & Christal 
+
+Welcome to the project repo. 
