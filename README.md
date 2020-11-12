@@ -6,3 +6,4 @@ Jeudi 12 Novembre :
 - Création du fichier main
 - Création du Makefile
 - Ajout de fichiers contenant des fonctions SDL utiles 
+- Création du fichier objet + ajout des ressources 
