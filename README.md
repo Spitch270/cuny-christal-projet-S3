@@ -17,17 +17,17 @@ Lib : SDL2
 
 Semaine 0 : 
 
--Création du dépot 
+- Création du dépot 
 
 Semaine 1 : 
 
 Semaine 2 :
 
--Création du fichier main 
--Création du Makefile
--Ajout des fichiers contenant des fonctions SDL utiles
--Création du fichier objet + ajout de ressources 
+- Création du fichier main 
+- Création du Makefile
+- Ajout des fichiers contenant des fonctions SDL utiles
+- Création du fichier objet + ajout de ressources 
 
 Semaine 3 : 
 
--Ecriture du Makefile 
+- Ecriture du Makefile 
