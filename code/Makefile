@@ -11,13 +11,13 @@ SRT = tests.c sdl2-light.c gameplay.c affichage.c sdl2-ttf-light.c
 OBT = $(SRT:%.c=%.o)
 
 
-PROG = battle
+PROG = pointandclick
 
 
 %.o: %.c $(INC)
 	gcc $(CFLAGS) -c $<
 
-battle: $(OBJ)
+pointandclick: $(OBJ)
 	gcc $(CFLAGS) $(OBJ) $(LDFLAGS) -o $@
 
 
