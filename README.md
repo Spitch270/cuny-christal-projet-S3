@@ -34,4 +34,7 @@ Semaine 3 :
 
 Semaine 4 : 
 
-- 
+- Ecriture du Makefile
+- Ajout de fichiers d'anciens projet utile pour ce nouveau projet 
+- Ajout de ressources 
+- Ajout d'un dossier et suppressions de celui-ci (erreur de manipulation) 
