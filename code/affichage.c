@@ -22,7 +22,7 @@ void apply_background(SDL_Renderer *renderer, ressources_t *textures)
 };
 void apply_sprite(SDL_Renderer *renderer, SDL_Texture *texture, sprite_t *sprite)
 {
-	apply_texture(texture,renderer,sprite->x-(SHIP_SIZE/2),sprite->y-(SHIP_SIZE/2));
+
 };
 void refresh_graphics(SDL_Renderer *renderer, world_t *world,ressources_t *textures)
 {
@@ -33,14 +33,12 @@ void refresh_graphics(SDL_Renderer *renderer, world_t *world,ressources_t *textu
 };
 void clean(SDL_Window *window, SDL_Renderer * renderer,ressources_t *textures, world_t * world)
 {
-    clean_data(world);
     clean_textures(textures);
     clean_sdl(renderer,window);
 };
 void init(SDL_Window **window, SDL_Renderer ** renderer, ressources_t *textures, world_t * world){
 	init_ttf();
     	init_sdl(window,renderer,SCREEN_WIDTH, SCREEN_HEIGHT);
-    	init_data(world);
     	init_textures(*renderer,textures);
 	
 };

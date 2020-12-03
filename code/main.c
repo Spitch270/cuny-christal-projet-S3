@@ -1,10 +1,4 @@
-/**
- * \file main.c
- * \brief Programme principal initial du niveau 1
- * \author Mathieu Constant
- * \version 1.0
- * \date 18 mars 2020
- */
+
 #include <math.h>
 #include <string.h>
 #include "gameplay.h"
@@ -32,13 +26,14 @@ int main( int argc, char* args[] )
 	
 	    //initialisation du jeu
 	    init(&window,&renderer,&textures,&world);
-	    while(!is_game_over(&world)){ //tant que le jeu n'est pas fini
-	        //gestion des évènements
-	        handle_events(&event,&world);
+	    while(1)
+	{ //tant que le jeu n'est pas fini
+
+	  
 		
         
 	        //mise à jour des données liée à la physique du monde
-	        update_data(&world);
+	       
 	        
 	        //rafraichissement de l'écran
 	        refresh_graphics(renderer,&world,&textures);
@@ -47,12 +42,22 @@ int main( int argc, char* args[] )
 		{
 			if(event.type == SDL_MOUSEBUTTONDOWN)
 			{
-			xMouse=event.button.x;
-			yMouse=event.button.y;
+				xMouse=event.button.x;
+				yMouse=event.button.y;
+				printf("x=%d\n",xMouse);
+				printf("y=%d\n",yMouse);
+				if(sprites_collide(xMouse,yMouse,125,125,5,5)==1)
+				{
+					printf("touché\n");
+				}
+				else
+				{
+					printf("pas touché\n");
+				}
 			}
 		}
-		printf("x=%d\n",xMouse);
-		printf("y=%d\n",yMouse);
+		
+		
         
 	        // pause de 10 ms pour controler la vitesse de rafraichissement
 	        pause(10);
