@@ -38,3 +38,7 @@ Semaine 4 :
 - Ajout de fichiers d'anciens projet utile pour ce nouveau projet 
 - Ajout de ressources 
 - Ajout d'un dossier et suppressions de celui-ci (erreur de manipulation) 
+
+Semaine 5 : 
+
+- Ajout des collisions 
