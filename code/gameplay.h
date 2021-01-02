@@ -6,17 +6,7 @@
 
 
 
-#define NB_ENNEMIES 6
-#define NB_ETOILES 1
 
-/**
- * \brief Largeur de l'écran de jeu
- */
-#define SCREEN_WIDTH 250
-/**
- * \brief Hauteur de l'écran de jeu
- */
-#define SCREEN_HEIGHT 250
 
 
 /**
@@ -49,14 +39,6 @@ typedef struct sprite_s sprite_t;
 */
 
 struct world_s{
-	//sprite_t * ennemie;	/**champ indiquant l'nenemi*/	
-	sprite_t * ship;	/**champ indiquant le vaisseau*/
-	sprite_t * missile;	/**champ indiquant le missile*/	
-	sprite_t * ennemies[NB_ENNEMIES];	/**champ indiquant le tableau d'ennemies*/
-	sprite_t * etoile[NB_ETOILES];	/**champ indiquant le tableau d'étoiles*/
-	sprite_t * bouclier;/**champ indiquant le bouclier*/
-	sprite_t * boss;/**champ indiquant le boss*/
-	sprite_t * bm;/**champ indiquand le misslie du boss*/
 	int score;	/**champ indiquant le score*/
 	int gameover; /*!< Champ indiquant si l'on est à la fin du jeu */
 	int vague;	/**champ indiquant le numéro d ela vague*/

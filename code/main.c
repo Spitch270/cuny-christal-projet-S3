@@ -23,10 +23,12 @@ int main( int argc, char* args[] )
     SDL_Renderer *renderer;
     SDL_Window *window;
     int xMouse,yMouse;
+    int etat;
+    etat=1;
 	
 	    //initialisation du jeu
 	    init(&window,&renderer,&textures,&world);
-	    while(1)
+	    while(etat==1)
 	{ //tant que le jeu n'est pas fini
 
 	  
@@ -36,7 +38,7 @@ int main( int argc, char* args[] )
 	       
 	        
 	        //rafraichissement de l'écran
-	        refresh_graphics(renderer,&world,&textures);
+	        refresh_graphics(renderer,&world,&textures,etat);
 		
 		while(SDL_PollEvent(&event))	
 		{
@@ -44,16 +46,23 @@ int main( int argc, char* args[] )
 			{
 				xMouse=event.button.x;
 				yMouse=event.button.y;
-				printf("x=%d\n",xMouse);
-				printf("y=%d\n",yMouse);
-				if(sprites_collide(xMouse,yMouse,125,125,5,5)==1)
+				//*printf("x=%d\n",xMouse);
+				//*printf("y=%d\n",yMouse);
+				//*quitter le menu
+				if(sprites_collide(xMouse,yMouse,365,200,15,50)==1 && etat==1)
 				{
-					printf("touché\n");
+					clean(window,renderer,&textures,&world);
+					return 0;
 				}
-				else
+				//*jouer
+				if(sprites_collide(xMouse,yMouse,365,150,15,50)==1 && etat==1)
 				{
-					printf("pas touché\n");
+	
+					etat=0;	
+					printf("etat=%d\n",etat);
+					
 				}
+				
 			}
 		}
 		
@@ -66,6 +75,7 @@ int main( int argc, char* args[] )
     
     //nettoyage final
     clean(window,renderer,&textures,&world);
+	  
    
        return 0;
 }

@@ -5,13 +5,13 @@
 #include "sdl2-ttf-light.h"
 
 
-#define SCREEN_WIDTH 250
-
-#define SCREEN_HEIGHT 250
+#define SCREEN_WIDTH 720
+#define SCREEN_HEIGHT 420
 
 struct ressources_s
 {
     	SDL_Texture* background; 
+	SDL_Texture* menu;
 	TTF_Font * font; 
 	
 };
@@ -36,10 +36,10 @@ void  init_textures(SDL_Renderer *renderer, ressources_t *textures);
 
 void apply_background(SDL_Renderer *renderer, ressources_t *textures);
 
-void apply_sprite(SDL_Renderer *renderer, SDL_Texture *texture, sprite_t *sprite);
+void apply_menu(SDL_Renderer *renderer, ressources_t *textures);
 
 
-void refresh_graphics(SDL_Renderer *renderer, world_t *world,ressources_t *textures);
+void refresh_graphics(SDL_Renderer *renderer, world_t *world,ressources_t *textures,int etat);
 
 
 void clean(SDL_Window *window, SDL_Renderer * renderer, ressources_t *textures, world_t * world);
