@@ -12,6 +12,7 @@ struct ressources_s
 {
     	SDL_Texture* background; 
 	SDL_Texture* menu;
+	SDL_Texture* scene1;
 	TTF_Font * font; 
 	
 };
@@ -36,8 +37,7 @@ void  init_textures(SDL_Renderer *renderer, ressources_t *textures);
 
 void apply_background(SDL_Renderer *renderer, ressources_t *textures);
 
-void apply_menu(SDL_Renderer *renderer, ressources_t *textures);
-
+void apply_sprite(SDL_Renderer *renderer, SDL_Texture *texture, sprite_t *sprite);
 
 void refresh_graphics(SDL_Renderer *renderer, world_t *world,ressources_t *textures,int etat);
 

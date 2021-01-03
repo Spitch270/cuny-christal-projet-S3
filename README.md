@@ -1,6 +1,6 @@
 ﻿# S3 Projet de Cuny & Christal : Point & Click 
 
-Bienvenue sur le dépôt git du projet 
+Bienvenue sur le dépôt git du projet le jeun ne marche pas encore tres bien du a un probleme avec la transition du fond ce qui fais que le jue n'est pas "jouable"
 
 
 ## Sujet du Jeu 

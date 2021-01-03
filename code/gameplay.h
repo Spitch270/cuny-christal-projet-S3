@@ -20,11 +20,8 @@ struct sprite_s{
 	int y;	/**ordonnée*/
 	int h;	/**hauteur*/
 	int w;	/**largeur*/
-	int v;	/**vitesse verticale*/
 	int is_visible; /**sprite visible ou non*/
-	int s; /** score ramener par cet ennemie*/
-	int bouclier;
-	int boss;/** indique au jeu si on doit mettre la taille du boss ou pas (0:non 1:oui)*/
+	
 };
 
 /**
@@ -39,6 +36,8 @@ typedef struct sprite_s sprite_t;
 */
 
 struct world_s{
+	sprite_t * menu;
+	sprite_t * scene1;
 	int score;	/**champ indiquant le score*/
 	int gameover; /*!< Champ indiquant si l'on est à la fin du jeu */
 	int vague;	/**champ indiquant le numéro d ela vague*/
