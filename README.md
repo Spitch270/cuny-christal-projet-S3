@@ -60,3 +60,9 @@ Semaine 4 :
 Semaine 5 : 
 
 - Ajout des collisions 
+
+Dernière semaine : 
+
+- Ajout de la page menu 
+- Ajout des backgrounds 
+- Ecriture de la trame principale du jeu 
